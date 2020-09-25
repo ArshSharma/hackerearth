@@ -30,10 +30,10 @@ public class GameService {
 					}
 					int player =gameNextDot.get(movePayload.getId());
 					int[][] board= gameList.get(movePayload.getId());
-					if(movePayload.getCol()>7 || movePayload.getCol()<=0) {
+					if(movePayload.getCol()>=7 || movePayload.getCol()<0) {
 						return "Invalid Move";
 					}
-					if(!newMove(movePayload.getCol()-1, board, player)) {
+					if(!newMove(movePayload.getCol(), board, player)) {
 						return "Invalid Move";
 					}
 					if(checkBoard(board)) {
