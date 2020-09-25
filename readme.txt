@@ -9,8 +9,8 @@ Java
 
 
 ## Hosted Application URL
-1. Swagger Ui: https://hackerearthapi.herokuapp.com/swagger-ui.html
-2. Play: https://hackerearthapi.herokuapp.com/move
+1. Swagger Ui: http://localhost:8080/swagger-ui.html
+2. Play: http://localhost:8080/move
 
 ### Play request payload
 * request={"move":"start"|"move", "id": id, "col":col }
